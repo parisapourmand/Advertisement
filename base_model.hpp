@@ -1,3 +1,6 @@
+#ifndef __BASEADVERTISING_H__
+#define __BASEADVERTISING_H__
+
 #include <iostream>
 
 class BaseAdvertising
@@ -22,8 +25,10 @@ public:
 	}
 
 
-private:
+protected:
 	int id;
 	int clicks;
 	int views;
 };
+
+#endif

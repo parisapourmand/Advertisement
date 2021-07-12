@@ -1,3 +1,6 @@
+#ifndef __ADVERTISER_H__
+#define __ADVERTISER_H__
+
 #include <iostream>
 #include "base_model.hpp"
 
@@ -5,12 +8,12 @@
 class Advertiser : public BaseAdvertising
 {
 public:
-	Advertiser();
+	Advertiser(int id, std::string name);
 
-	string getName(){
+	std::string getName(){
 		return this->name;
 	}
-	void setName(string name){
+	void setName(std::string name){
 		this->name = name;
 	}
 	std::string help(){
@@ -18,8 +21,15 @@ public:
 	}
 	int getTotalClicks();
 
+	void incClicks();
+	void incViews();
+	
+	std::string describeMe();
+
 private:
 	std::string name;
 	static int totalClicks;
 
 };
+
+#endif

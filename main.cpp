@@ -5,12 +5,12 @@
 
 using namespace std;
 
+int Advertiser::totalClicks = 0;
 int main()
 {
-	int Advertiser::totalClicks = 0;
-	baseAdvertising = new BaseAdvertising();
-	advertiser1 = new Advertiser(1, “name1”); 
-	advertiser2 = new Advertiser(2, “name2”);	
+	BaseAdvertising *baseAdvertising = new BaseAdvertising();
+	Advertiser advertiser1 = new Advertiser(1, “name1”); 
+	Advertiser advertiser2 = new Advertiser(2, “name2”);	
 	ad1 = new Ad(1, “title1”, “img-url1”, “link1”, advertiser1);
 	ad2 = new Ad(2, “title2”, “img-url2”, “link2”, advertiser2);
 	baseAdvertising.describeMe();
