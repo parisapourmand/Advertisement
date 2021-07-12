@@ -1,7 +1,5 @@
 #include <iostream>
 
-using namespace std;
-
 class BaseAdvertising
 {
 public:
@@ -18,6 +16,9 @@ public:
 	}
 	void incViews(){
 		this->views++;
+	}
+	std::string describeMe(){
+		return "BaseAdvertising: Class for basic functions needed for advertising";
 	}
 
 

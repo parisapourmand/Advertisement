@@ -13,8 +13,8 @@ int main()
 	advertiser2 = new Advertiser(2, “name2”);	
 	ad1 = new Ad(1, “title1”, “img-url1”, “link1”, advertiser1);
 	ad2 = new Ad(2, “title2”, “img-url2”, “link2”, advertiser2);
-	// baseAdvertising.describeMe();
-	// ad2.describeMe();
+	baseAdvertising.describeMe();
+	ad2.describeMe();
 	advertiser1.describeMe();
 	ad1.incViews();
 	ad1.incViews();

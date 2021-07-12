@@ -16,3 +16,8 @@ void Ad::incClicks(){
 	this->clicks++;
 	this->theAdveriser->incClicks();
 }
+
+
+std::string Advertiser::describeMe(){
+	return "Ad: Class containing ad info and functions needed for each ad";
+}

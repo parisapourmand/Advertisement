@@ -1,8 +1,6 @@
 #include "base_model.cpp"
 #include "advertiser.cpp"
 
-using namespace std;
-
 class Ad : public BaseAdvertising
 {
 public:
@@ -14,8 +12,6 @@ public:
 	void setTitle(std::string title){
 		this->title = title;
 	}
-
-	void incClicks();
 
 
 private:
