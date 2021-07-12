@@ -3,11 +3,12 @@
 
 using namespace std;
 
-Ad::Ad(int id, string title){
+Ad::Ad(int id, string title, string imgURL, string link, Advertiser * theAdveriser){
 	this->id = id;
 	this->title = title;
 	this->imgURL = imgURL;
 	this->link = link;
+	this->theAdveriser = theAdveriser;
 	this->clicks = 0;
 	this->views = 0;
 }
